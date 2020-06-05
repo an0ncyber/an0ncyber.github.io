@@ -1,4 +1,9 @@
 <script>
+  var target = document.getElementsByTagName("canvas")[0];
+if (event.target != target) {
+    target.focus();
+    target.click();
+}
   let be = Date.now(),fps=0;
   var score = 0
   var scoreMax = 0
