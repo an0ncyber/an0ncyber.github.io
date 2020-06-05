@@ -963,8 +963,8 @@ function renderBullets()
     var b = bullets[i];
 
     context.beginPath();
-    var randomColor = Math.floor(Math.random()*16777215).toString(16);
-    context.strokeStyle =  "#"+ randomColor;
+   // var randomColor = Math.floor(Math.random()*16777215).toString(16);
+    context.strokeStyle =  "#FF007F";
     context.arc(b.pos.getX() >> 0, b.pos.getY() >> 0, b.radius, 0, doublePI);
     if(Math.random() > 0.2) context.stroke();
     context.closePath();
